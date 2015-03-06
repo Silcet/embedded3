@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/impact.xsl
+OUTFILE=/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test
+LICENSE=iMPACT
+USER_INFO=iMPACT

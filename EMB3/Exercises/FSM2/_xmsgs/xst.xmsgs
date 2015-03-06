@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="858" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 12: Unknown character &apos;<arg fmt="%c" index="1">s</arg>&apos; in enumeration encoding is considered &apos;X&apos;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="379" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 12: enum_encoding property specifying incorrect number of valid encoding values for type &lt;<arg fmt="%s" index="1">state</arg>&gt; is ignored.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="858" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 12: Unknown character &apos;<arg fmt="%c" index="1">s</arg>&apos; in enumeration encoding is considered &apos;X&apos;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="379" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 12: enum_encoding property specifying incorrect number of valid encoding values for type &lt;<arg fmt="%s" index="1">state</arg>&gt; is ignored.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 31: <arg fmt="%s" index="1">clk</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 69: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 76: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 83: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 90: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 97: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 104: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/moro/Apuntes/EMB3/Exercises/FSM2/FSM.vhd" Line 111: <arg fmt="%s" index="1">flag</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

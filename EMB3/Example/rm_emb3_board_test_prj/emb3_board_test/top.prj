@@ -1,0 +1,6 @@
+vhdl work "ps2_rx_fsm.vhd"
+vhdl work "ps2interface.vhd"
+vhdl work "vga_generator.vhd"
+vhdl work "ps2_wrapper.vhd"
+vhdl utility_v01_00_a "log_pkg.vhd"
+vhdl work "top.vhd"

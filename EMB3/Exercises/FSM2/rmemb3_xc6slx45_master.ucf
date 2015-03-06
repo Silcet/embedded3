@@ -1,0 +1,21 @@
+
+###################################################
+##						FPGA board IO						 ##
+
+# Clock input
+NET "clk_200M_i" LOC = A11 | IOSTANDARD = LVCMOS33;
+NET "clk_200M_i" TNM_NET = "clk_200M_i";
+TIMESPEC TS_clk_200M_i = PERIOD "clk_200M_i" 200 MHz HIGH 50 %;
+
+# LEDs
+NET "led_o<0>"  	LOC = "B6" | IOSTANDARD = LVCMOS33; #LED1
+NET "led_o<1>"  	LOC = "A5" | IOSTANDARD = LVCMOS33; #LED2
+NET "led_o<2>"  	LOC = "A8" | IOSTANDARD = LVCMOS33; #LED3
+NET "led_o<3>"  	LOC = "B8" | IOSTANDARD = LVCMOS33; #LED4
+NET "led_o<4>"  	LOC = "C7" | IOSTANDARD = LVCMOS33; #LED5
+NET "led_o<5>"  	LOC = "A4" | IOSTANDARD = LVCMOS33; #LED6
+NET "led_o<6>"  	LOC = "D7" | IOSTANDARD = LVCMOS33; #LED7
+
+# Buttons
+NET "j7_btn_i<0>"	 			LOC = "J4" | IOSTANDARD = LVCMOS33 | PULLUP = TRUE; #BTN0 (S2) N.B. REQUIRES PULL-UP 
+NET "j7_btn_i<1>"	 			LOC = "H5" | IOSTANDARD = LVCMOS33 | PULLUP = TRUE; #BTN1 (S3) N.B. REQUIRES PULL-UP 

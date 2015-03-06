@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 71: Using initial value <arg fmt="%s" index="1">16</arg> for <arg fmt="%s" index="2">c_h_fp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 72: Using initial value <arg fmt="%s" index="1">96</arg> for <arg fmt="%s" index="2">c_h_sp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 73: Using initial value <arg fmt="%s" index="1">48</arg> for <arg fmt="%s" index="2">c_h_bp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 74: Using initial value <arg fmt="%s" index="1">640</arg> for <arg fmt="%s" index="2">c_h_px</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 76: Using initial value <arg fmt="%s" index="1">144</arg> for <arg fmt="%s" index="2">c_hs_offset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 77: Using initial value <arg fmt="%s" index="1">800</arg> for <arg fmt="%s" index="2">c_pixel_pr_line</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 98: Using initial value <arg fmt="%s" index="1">10</arg> for <arg fmt="%s" index="2">c_v_fp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 99: Using initial value <arg fmt="%s" index="1">2</arg> for <arg fmt="%s" index="2">c_v_sp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 100: Using initial value <arg fmt="%s" index="1">33</arg> for <arg fmt="%s" index="2">c_v_bp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 101: Using initial value <arg fmt="%s" index="1">480</arg> for <arg fmt="%s" index="2">c_v_ln</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 103: Using initial value <arg fmt="%s" index="1">35</arg> for <arg fmt="%s" index="2">c_vs_offset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/vga_generator.vhd" Line 104: Using initial value <arg fmt="%s" index="1">525</arg> for <arg fmt="%s" index="2">c_lines_pr_frame</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">fx2_vga_red_i&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">fx2_vga_green_i&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">fx2_vga_blue_i&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/ps2_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">25</arg>: Output port &lt;<arg fmt="%s" index="3">busy</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ps2interface_inst0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/ps2_wrapper.vhd</arg>&quot; line <arg fmt="%s" index="2">25</arg>: Output port &lt;<arg fmt="%s" index="3">err</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ps2interface_inst0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_force_clk_l</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_bring_data_down</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_release_clk</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_first_wait_down_edge</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_clk_l</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_wait_up_edge</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_clk_h</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_wait_up_edge_before_ack</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_wait_ack</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_received_ack</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="1799" delta="new" >State <arg fmt="%s" index="1">tx_error_no_ack</arg> is never reached in FSM &lt;<arg fmt="%s" index="2">state</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2interface_inst0</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3216" delta="new" >HDL ADVISOR - LUT implementation is currently selected for the RAM &lt;<arg fmt="%s" index="1">Mram_frame[8]_PWR_16_o_Mux_10_o</arg>&gt;. If you want the register to be removed and the RAM to be implemented as block RAM, please change the RAM implementation style accordingly.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">frame_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">ps2_data_h</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ps2interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">ps2_clk_h</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">ps2interface</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_100us_done</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_20us_done</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">delay_63clk_done</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ps2interface</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ps2_wrapper_inst0/ps2interface_inst0/err</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_generator_inst/r_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_generator_inst/r_o_1&gt; &lt;vga_generator_inst/r_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_generator_inst/b_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_generator_inst/b_o_1&gt; &lt;vga_generator_inst/b_o_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_generator_inst/g_o_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_generator_inst/g_o_1&gt; &lt;vga_generator_inst/g_o_0&gt; </arg>
+</msg>
+
+</messages>
+

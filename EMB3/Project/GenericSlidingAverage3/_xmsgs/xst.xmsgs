@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 92: Using initial value <arg fmt="%s" index="1">16</arg> for <arg fmt="%s" index="2">c_h_fp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 93: Using initial value <arg fmt="%s" index="1">96</arg> for <arg fmt="%s" index="2">c_h_sp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 94: Using initial value <arg fmt="%s" index="1">48</arg> for <arg fmt="%s" index="2">c_h_bp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 95: Using initial value <arg fmt="%s" index="1">640</arg> for <arg fmt="%s" index="2">c_h_px</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 97: Using initial value <arg fmt="%s" index="1">144</arg> for <arg fmt="%s" index="2">c_hs_offset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 98: Using initial value <arg fmt="%s" index="1">800</arg> for <arg fmt="%s" index="2">c_pixel_pr_line</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 103: Using initial value <arg fmt="%s" index="1">10</arg> for <arg fmt="%s" index="2">c_v_fp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 104: Using initial value <arg fmt="%s" index="1">2</arg> for <arg fmt="%s" index="2">c_v_sp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 105: Using initial value <arg fmt="%s" index="1">33</arg> for <arg fmt="%s" index="2">c_v_bp</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 106: Using initial value <arg fmt="%s" index="1">480</arg> for <arg fmt="%s" index="2">c_v_ln</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 108: Using initial value <arg fmt="%s" index="1">35</arg> for <arg fmt="%s" index="2">c_vs_offset</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 109: Using initial value <arg fmt="%s" index="1">525</arg> for <arg fmt="%s" index="2">c_lines_pr_frame</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 76: &lt;<arg fmt="%s" index="1">divider</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="890" delta="new" >"/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.vhd" Line 211: wait statement without UNTIL clause not supported for synthesis
+</msg>
+
+</messages>
+

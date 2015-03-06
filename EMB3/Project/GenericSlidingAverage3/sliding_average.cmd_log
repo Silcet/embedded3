@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.xst" -ofn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.xst" -ofn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.xst" -ofn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.xst" -ofn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.xst" -ofn "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage3/sliding_average.syr" 

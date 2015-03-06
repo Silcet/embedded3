@@ -1,0 +1,52 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3
+top.ngc top.ngd
+
+Reading NGO file
+"/home/moro/Apuntes/EMB3/Example/rm_emb3_board_test_prj/emb3_board_test/top.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "rmemb3_xc6slx45_master.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_200M_i', used in period specification
+   'TS_clk_200M_i', was traced into DCM_CLKGEN instance DCM_CLKGEN_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_CLKGEN output(s): 
+   CLKFX180: <TIMESPEC TS_clk_100M7_180 = PERIOD "clk_100M7_180" TS_clk_200M_i *
+   0.503496503 PHASE 4.965277778 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_200M_i', used in period specification
+   'TS_clk_200M_i', was traced into DCM_CLKGEN instance DCM_CLKGEN_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_CLKGEN output(s): 
+   CLKFX: <TIMESPEC TS_clk_100M7 = PERIOD "clk_100M7" TS_clk_200M_i *
+   0.503496503 HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 405748 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   5 sec
+
+Writing NGDBUILD log file "top.bld"...

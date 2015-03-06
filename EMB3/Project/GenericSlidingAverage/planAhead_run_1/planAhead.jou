@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Fri Feb 27 18:01:06 2015
+# Process ID: 6423
+# Log file: /home/moro/Apuntes/EMB3/Project/GenericSlidingAverage/planAhead_run_1/planAhead.log
+# Journal file: /home/moro/Apuntes/EMB3/Project/GenericSlidingAverage/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/moro/Apuntes/EMB3/Project/GenericSlidingAverage/pa.fromNcd.tcl

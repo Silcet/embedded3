@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.ncd
+OUTFILE=/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.bit
+FAMILY=Spartan6
+PART=xc6slx45-3fgg484
+WORKINGDIR=/home/moro/Apuntes/EMB3/Exercises/FSM
+LICENSE=ISE
+USER_INFO=210779069_174157381_210595800_366

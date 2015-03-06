@@ -1,0 +1,30 @@
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fsm_map.ncd fsm.ngd fsm.pcf 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fsm_map.ncd fsm.ngd fsm.pcf 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fsm_map.ncd fsm.ngd fsm.pcf 
+par -w -intstyle ise -ol high -mt off fsm_map.ncd fsm.ncd fsm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fsm.twx fsm.ncd -o fsm.twr fsm.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f fsm.ut fsm.ncd 
+xst -intstyle ise -ifn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.xst" -ofn "/home/moro/Apuntes/EMB3/Exercises/FSM/fsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 fsm.ngc fsm.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fsm_map.ncd fsm.ngd fsm.pcf 
+par -w -intstyle ise -ol high -mt off fsm_map.ncd fsm.ncd fsm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fsm.twx fsm.ncd -o fsm.twr fsm.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f fsm.ut fsm.ncd 

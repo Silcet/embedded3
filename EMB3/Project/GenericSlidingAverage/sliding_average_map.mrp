@@ -1,0 +1,662 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'sliding_average'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr b -lc off -power off -o sliding_average_map.ncd sliding_average.ngd
+sliding_average.pcf 
+Target Device  : xc6slx45
+Target Package : fgg484
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Wed Mar  4 18:07:54 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                   288 out of  54,576    1%
+    Number used as Flip Flops:                 288
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        201 out of  27,288    1%
+    Number used as logic:                      121 out of  27,288    1%
+      Number using O6 output only:             112
+      Number using O5 output only:               0
+      Number using O5 and O6:                    9
+      Number used as ROM:                        0
+    Number used as Memory:                       6 out of   6,408    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             6
+        Number using O6 output only:             2
+        Number using O5 output only:             0
+        Number using O5 and O6:                  4
+    Number used exclusively as route-thrus:     74
+      Number with same-slice register load:     73
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    70 out of   6,822    1%
+  Number of MUXCYs used:                       144 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          216
+    Number with an unused Flip Flop:            22 out of     216   10%
+    Number with an unused LUT:                  15 out of     216    6%
+    Number of fully used LUT-FF pairs:         179 out of     216   82%
+    Number of unique control sets:               3
+    Number of slice register sites lost
+      to control set restrictions:               6 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        24 out of     316    7%
+    IOB Flip Flops:                             20
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                  10 out of     376    2%
+    Number used as ILOGIC2s:                    10
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                  10 out of     376    2%
+    Number used as OLOGIC2s:                    10
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.65
+
+Peak Memory Usage:  769 MB
+Total REAL time to MAP completion:  5 mins 47 secs 
+Total CPU time to MAP completion:   5 mins 37 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network divider_inst/quotient<13> has no load.
+INFO:LIT:395 - The above info message is repeated 23 more times for the
+   following (max. 5 shown):
+   divider_inst/quotient<12>,
+   divider_inst/quotient<11>,
+   divider_inst/quotient<10>,
+   divider_inst/fractional<3>,
+   divider_inst/fractional<2>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 121 block(s) removed
+  33 block(s) optimized away
+ 119 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "divider_inst/quotient<13>" is sourceless and has been removed.
+The signal "divider_inst/quotient<12>" is sourceless and has been removed.
+The signal "divider_inst/quotient<11>" is sourceless and has been removed.
+The signal "divider_inst/quotient<10>" is sourceless and has been removed.
+The signal "divider_inst/fractional<3>" is sourceless and has been removed.
+The signal "divider_inst/fractional<2>" is sourceless and has been removed.
+The signal "divider_inst/fractional<1>" is sourceless and has been removed.
+The signal "divider_inst/fractional<0>" is sourceless and has been removed.
+The signal "divider_inst/blk00000003/sig00000048" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000001d" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000049" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001b8" (FF) removed.
+    The signal "divider_inst/blk00000003/sig0000022c" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk000001c0" (FF) removed.
+      The signal "divider_inst/blk00000003/sig00000234" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk000001c9" (FF) removed.
+        The signal "divider_inst/blk00000003/sig0000023d" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk000001d3" (FF) removed.
+          The signal "divider_inst/blk00000003/sig00000247" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001de" (FF) removed.
+            The signal "divider_inst/blk00000003/sig00000252" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk000001ea" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000025e" is sourceless and has been
+removed.
+               Sourceless block "divider_inst/blk00000003/blk00000266" (BUF) removed.
+                The signal "divider_inst/blk00000003/sig000000ad" is sourceless and has been
+removed.
+                 Sourceless block "divider_inst/blk00000003/blk0000007d" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000004a" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000001e" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000004b" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001b7" (FF) removed.
+    The signal "divider_inst/blk00000003/sig0000022b" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk000001bf" (FF) removed.
+      The signal "divider_inst/blk00000003/sig00000233" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk000001c8" (FF) removed.
+        The signal "divider_inst/blk00000003/sig0000023c" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk000001d2" (FF) removed.
+          The signal "divider_inst/blk00000003/sig00000246" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001dd" (FF) removed.
+            The signal "divider_inst/blk00000003/sig00000251" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk000001e9" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000025d" is sourceless and has been
+removed.
+               Sourceless block "divider_inst/blk00000003/blk00000267" (BUF) removed.
+                The signal "divider_inst/blk00000003/sig000000ac" is sourceless and has been
+removed.
+                 Sourceless block "divider_inst/blk00000003/blk0000007c" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000004c" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000001f" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000004d" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001b6" (FF) removed.
+    The signal "divider_inst/blk00000003/sig0000022a" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk000001be" (FF) removed.
+      The signal "divider_inst/blk00000003/sig00000232" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk000001c7" (FF) removed.
+        The signal "divider_inst/blk00000003/sig0000023b" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk000001d1" (FF) removed.
+          The signal "divider_inst/blk00000003/sig00000245" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001dc" (FF) removed.
+            The signal "divider_inst/blk00000003/sig00000250" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk000001e8" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000025c" is sourceless and has been
+removed.
+               Sourceless block "divider_inst/blk00000003/blk00000268" (BUF) removed.
+                The signal "divider_inst/blk00000003/sig000000ab" is sourceless and has been
+removed.
+                 Sourceless block "divider_inst/blk00000003/blk0000007b" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000004e" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000020" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000004f" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001b5" (FF) removed.
+    The signal "divider_inst/blk00000003/sig00000229" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk000001bd" (FF) removed.
+      The signal "divider_inst/blk00000003/sig00000231" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk000001c6" (FF) removed.
+        The signal "divider_inst/blk00000003/sig0000023a" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk000001d0" (FF) removed.
+          The signal "divider_inst/blk00000003/sig00000244" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001db" (FF) removed.
+            The signal "divider_inst/blk00000003/sig0000024f" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk000001e7" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000025b" is sourceless and has been
+removed.
+               Sourceless block "divider_inst/blk00000003/blk00000269" (BUF) removed.
+                The signal "divider_inst/blk00000003/sig000000aa" is sourceless and has been
+removed.
+                 Sourceless block "divider_inst/blk00000003/blk0000007a" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000005a" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000002a" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000005b" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000002b" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000005c" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000002c" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000005d" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000002d" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000005f" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000039" (FF) removed.
+The signal "divider_inst/blk00000003/sig00000060" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000002f" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000061" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk0000003a" (FF) removed.
+The signal "divider_inst/blk00000003/sig00000062" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000030" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000063" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk0000003b" (FF) removed.
+The signal "divider_inst/blk00000003/sig00000064" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000031" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000065" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk0000003c" (FF) removed.
+The signal "divider_inst/blk00000003/sig00000067" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000033" (FF) removed.
+The signal "divider_inst/blk00000003/sig00000068" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000034" (FF) removed.
+The signal "divider_inst/blk00000003/sig0000006a" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000036" (FF) removed.
+The signal "divider_inst/blk00000003/sig000000a6" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000202" (AND) removed.
+  The signal "divider_inst/blk00000003/sig0000027a" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001fd" (MUX) removed.
+    The signal "divider_inst/blk00000003/sig00000271" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk000001f8" (XOR) removed.
+      The signal "divider_inst/blk00000003/sig00000273" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk00000204" (FF) removed.
+     Sourceless block "divider_inst/blk00000003/blk000001f9" (MUX) removed.
+      The signal "divider_inst/blk00000003/sig0000026d" is sourceless and has been
+removed.
+       Sourceless block "divider_inst/blk00000003/blk000001f6" (XOR) removed.
+        The signal "divider_inst/blk00000003/sig0000026f" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk00000205" (FF) removed.
+       Sourceless block "divider_inst/blk00000003/blk000001f7" (MUX) removed.
+        The signal "divider_inst/blk00000003/sig00000268" is sourceless and has been
+removed.
+         Sourceless block "divider_inst/blk00000003/blk000001f4" (XOR) removed.
+          The signal "divider_inst/blk00000003/sig0000026a" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk00000206" (FF) removed.
+         Sourceless block "divider_inst/blk00000003/blk000001f5" (MUX) removed.
+          The signal "divider_inst/blk00000003/sig0000026c" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001fa" (MUX) removed.
+            The signal "divider_inst/blk00000003/sig00000276" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk00000208" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000027c" is sourceless and has been
+removed.
+           Sourceless block "divider_inst/blk00000003/blk000001fb" (XOR) removed.
+            The signal "divider_inst/blk00000003/sig00000277" is sourceless and has been
+removed.
+             Sourceless block "divider_inst/blk00000003/blk00000207" (FF) removed.
+              The signal "divider_inst/blk00000003/sig0000027b" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000024c" (ROM) removed.
+  The signal "divider_inst/blk00000003/sig00000278" is sourceless and has been
+removed.
+   Sourceless block "divider_inst/blk00000003/blk000001fc" (XOR) removed.
+    The signal "divider_inst/blk00000003/sig00000279" is sourceless and has been
+removed.
+     Sourceless block "divider_inst/blk00000003/blk00000203" (FF) removed.
+The signal "divider_inst/blk00000003/sig000000a7" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000201" (AND) removed.
+  The signal "divider_inst/blk00000003/sig00000274" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000024d" (ROM) removed.
+  The signal "divider_inst/blk00000003/sig00000272" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000000a8" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000200" (AND) removed.
+  The signal "divider_inst/blk00000003/sig00000270" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000024e" (ROM) removed.
+  The signal "divider_inst/blk00000003/sig0000026e" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000000a9" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000001ff" (AND) removed.
+  The signal "divider_inst/blk00000003/sig0000026b" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk0000024f" (ROM) removed.
+  The signal "divider_inst/blk00000003/sig00000269" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000000d1" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000a5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000000d8" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000000e5" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000b5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000000ee" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000000fb" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000c5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000104" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000111" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000d5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000011a" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000127" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000e5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000130" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig0000013d" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk000000f5" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000146" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000153" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000105" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000015c" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000169" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000115" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000172" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig0000017f" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000125" (FF) removed.
+  The signal "divider_inst/blk00000003/sig00000188" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000195" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000135" (FF) removed.
+  The signal "divider_inst/blk00000003/sig0000019e" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001ab" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000145" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001b4" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001c1" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000155" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001ca" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001d7" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000165" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001e0" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001e6" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000173" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001f4" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001e9" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000172" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001f3" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001ec" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000171" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001f2" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001ed" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000175" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001f6" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig000001f0" is sourceless and has been
+removed.
+ Sourceless block "divider_inst/blk00000003/blk00000170" (FF) removed.
+  The signal "divider_inst/blk00000003/sig000001f1" is sourceless and has been
+removed.
+The signal "divider_inst/blk00000003/sig00000275" is sourceless and has been
+removed.
+Unused block "divider_inst/blk00000001" (ONE) removed.
+Unused block "divider_inst/blk00000002" (ZERO) removed.
+Unused block "divider_inst/blk00000003/blk0000002e" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000032" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000035" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000037" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000076" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000077" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000078" (FF) removed.
+Unused block "divider_inst/blk00000003/blk00000079" (FF) removed.
+Unused block "divider_inst/blk00000003/blk0000009d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000ad" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000bd" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000cd" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000dd" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000ed" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk000000fd" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000010d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000011d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000012d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000013d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000014d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000015d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk00000167" (XOR) removed.
+Unused block "divider_inst/blk00000003/blk00000168" (XOR) removed.
+Unused block "divider_inst/blk00000003/blk00000169" (XOR) removed.
+Unused block "divider_inst/blk00000003/blk0000016d" (MUX) removed.
+Unused block "divider_inst/blk00000003/blk0000016e" (XOR) removed.
+Unused block "divider_inst/blk00000003/blk000001fe" (AND) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		divider_inst/blk00000003/blk00000004
+VCC 		divider_inst/blk00000003/blk00000005
+FD 		divider_inst/blk00000003/blk0000003e
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000040
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000042
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000044
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000046
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000048
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000004a
+   optimized to 1
+FD 		divider_inst/blk00000003/blk0000004c
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000004e
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000050
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000052
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000054
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000056
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000058
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000005a
+   optimized to 1
+FD 		divider_inst/blk00000003/blk0000005c
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000005e
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000060
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000062
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000064
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000066
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000068
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000006a
+   optimized to 1
+FD 		divider_inst/blk00000003/blk0000006c
+   optimized to 0
+FD 		divider_inst/blk00000003/blk0000006e
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000070
+   optimized to 0
+FD 		divider_inst/blk00000003/blk00000072
+   optimized to 1
+FD 		divider_inst/blk00000003/blk00000074
+   optimized to 0
+INV 		divider_inst/blk00000003/blk0000026b
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| adc_clk_o                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| adc_i<0>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<1>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<2>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<3>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<4>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<5>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<6>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<7>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<8>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| adc_i<9>                           | IOB              | INPUT     | LVCMOS25             |       |          |      | IFF          |          |          |
+| clk_i                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| dac_clk_o                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| dac_o<0>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<1>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<2>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<3>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<4>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<5>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<6>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<7>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<8>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| dac_o<9>                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW | OFF          |          |          |
+| reset_i                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

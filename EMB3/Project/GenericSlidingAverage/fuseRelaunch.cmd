@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage/testbench_isim_beh.exe" -prj "/home/moro/Apuntes/EMB3/Project/GenericSlidingAverage/testbench_beh.prj" "work.testbench" 
